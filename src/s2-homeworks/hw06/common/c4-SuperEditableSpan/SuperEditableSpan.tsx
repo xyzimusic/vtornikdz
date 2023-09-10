@@ -8,6 +8,7 @@ import s from './SuperEditableSpan.module.css'
 import SuperInputText from '../../../hw04/common/c1-SuperInputText/SuperInputText'
 import editIcon from './editIcon.svg'
 
+
 // тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>,
     HTMLInputElement>
@@ -61,6 +62,7 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
     const spanClassName = s.span
         + (className ? ' ' + className : '')
 
+    console.log(restProps)
     return (
         <>
             {editMode ? (
@@ -70,7 +72,6 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
                     onEnter={onEnterCallback}
                     className={s.input}
                     {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
-
                 />
             ) : (
                 <div className={s.spanBlock}>
