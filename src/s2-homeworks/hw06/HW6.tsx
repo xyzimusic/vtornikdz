@@ -26,12 +26,6 @@ const HW6 = () => {
     return (
         <div id={'hw6'}>
             <div className={s2.hwTitle}>Homework #6</div>
-            <img
-                src={burgerIcon}
-                id={'hw5-burger-menu'}
-                className={s.burgerMenuIcon}
-                alt={'open menu'}
-            />
             {/*демонстрация возможностей компоненты:*/}
             <div className={s2.hw}>
                 <div className={s.editableSpanContainer}>

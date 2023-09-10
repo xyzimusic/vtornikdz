@@ -61,7 +61,7 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
     return (
         <div className={s.inputWrapper}>
             <input
-                id={id}
+                id={'hw6-spanable-input'}
                 type={'text'}
                 onChange={onChangeCallback}
                 onKeyPress={onKeyPressCallback}
