@@ -59,7 +59,7 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
     console.log('рендер инпута готов')
     console.log(id)
     return (
-        <div className={s.inputWrapper}  id={id}>
+        <div className={s.inputWrapper}  id={'hw5-burger-menu'}>
             <input
                 id={id}
                 type={'text'}
