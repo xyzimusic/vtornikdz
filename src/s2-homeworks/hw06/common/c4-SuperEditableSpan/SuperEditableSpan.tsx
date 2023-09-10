@@ -70,7 +70,7 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
                     onEnter={onEnterCallback}
                     className={s.input}
                     {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
-                    id ={'hw6-spanable-input'}
+
                 />
             ) : (
                 <div className={s.spanBlock}>
