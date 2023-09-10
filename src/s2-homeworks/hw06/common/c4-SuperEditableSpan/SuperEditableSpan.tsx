@@ -62,7 +62,6 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = (
     const spanClassName = s.span
         + (className ? ' ' + className : '')
 
-    console.log(restProps)
     return (
         <>
             {editMode ? (

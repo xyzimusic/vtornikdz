@@ -6,6 +6,7 @@ import React, {
     ReactNode,
 } from 'react'
 import s from './SuperInputText.module.css'
+import {log} from 'util';
 
 // тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>,
@@ -55,6 +56,7 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
         + (className ? ' ' + className : '') // задача на смешивание классов
 
     console.log('рендер инпута готов')
+    console.log(id)
     return (
         <div className={s.inputWrapper}>
             <input
