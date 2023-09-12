@@ -10,6 +10,7 @@ import {restoreState, saveState} from '../s2-homeworks/hw06/localStorage/localSt
 import s2 from './App.module.css';
 import SuperEditableSpan from '../s2-homeworks/hw06/common/c4-SuperEditableSpan/SuperEditableSpan';
 import SuperButton from '../s2-homeworks/hw04/common/c2-SuperButton/SuperButton';
+import HW7 from '../s2-homeworks/hw07/HW7';
 
 function App() {
     const [value, setValue] = useState<string>('')
@@ -32,9 +33,9 @@ function App() {
             {/*<HW4/>*/}
 
             {/*при выполнении дз 5 и более - закомментировать здесь дз 1-4, так как они есть внутри дз 5*/}
-            <HW5/>
-            <HW6/>
-
+            {/*<HW5/>*/}
+            {/*<HW6/>*/}
+            <HW7/>
             <br/>
             <br/>
             <br/>
