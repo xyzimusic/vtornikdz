@@ -7,12 +7,15 @@ type ActionType =
 export const homeWorkReducer = (state: any, action: any): any => { // need to fix any
     switch (action.type) {
         case 'sort': { // by name
-
-            return state // need to fix
+            if (action.payload === 'up') {
+                return [...state].sort((a, b) => a.name.localeCompare(b.name));
+            } else if (action.payload === 'down') {
+                return [...state].sort((a, b) => b.name.localeCompare(a.name));
+            }
+            break;
         }
         case 'check': {
-
-            return state // need to fix
+            return state.filter((user: { age: number; }) => user.age >= action.payload);
         }
         default:
             return state

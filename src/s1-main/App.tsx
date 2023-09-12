@@ -11,6 +11,7 @@ import s2 from './App.module.css';
 import SuperEditableSpan from '../s2-homeworks/hw06/common/c4-SuperEditableSpan/SuperEditableSpan';
 import SuperButton from '../s2-homeworks/hw04/common/c2-SuperButton/SuperButton';
 import HW7 from '../s2-homeworks/hw07/HW7';
+import HW8 from '../s2-homeworks/hw08/HW8';
 
 function App() {
     const [value, setValue] = useState<string>('')
@@ -36,6 +37,12 @@ function App() {
             <HW5/>
             <HW6/>
             <HW7/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <HW8/>
             <br/>
             <br/>
             <br/>
