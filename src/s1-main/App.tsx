@@ -34,36 +34,7 @@ function App() {
             {/*при выполнении дз 5 и более - закомментировать здесь дз 1-4, так как они есть внутри дз 5*/}
             <HW5/>
             <HW6/>
-            <div id={'hw6'}>
-                <div className={s2.hwTitle}>Homework #6</div>
-                {/*демонстрация возможностей компоненты:*/}
-                <div className={s2.hw}>
-                    <div className={s.editableSpanContainer}>
-                        <SuperEditableSpan
-                            id={'hw6-spanable-input'}
-                            value={value}
-                            onChangeText={setValue}
-                            spanProps={{
-                                id: 'hw6-editable-span',
-                                defaultText: 'enter text...',
-                            }}
-                        />
-                    </div>
 
-                    <div className={s.buttonsContainer}>
-                        <SuperButton id={'hw6-save'} onClick={save}>
-                            Save to ls
-                        </SuperButton>
-                        <SuperButton
-                            id={'hw6-restore'}
-                            onClick={restore}
-                            xType={'secondary'}
-                        >
-                            Get from ls
-                        </SuperButton>
-                    </div>
-                </div>
-            </div>
             <br/>
             <br/>
             <br/>
