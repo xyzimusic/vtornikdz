@@ -36,6 +36,11 @@ function Clock() {
     const stringDay = date.toLocaleDateString('en-US', { weekday: 'long' });// пишут студенты
     const stringMonth = date.toLocaleDateString('en-US', { month: 'long' }); // пишут студенты
 
+    const date1 = new Date();
+    const day = date1.getDate();
+    const month = date1.getMonth() + 1; // Месяцы в JavaScript нумеруются с 0, поэтому добавляем 1
+    const year = date1.getFullYear();
+    const formattedDate = `${day < 10 ? '0' + day : day}.${month < 10 ? '0' + month : month}.${year}`;
     return (
         <div className={s.clock}>
             <div
@@ -55,7 +60,7 @@ function Clock() {
                     {show ? (
                         <>
                             <span id={'hw9-month'}>{stringMonth}</span>,{' '}
-                            <span id={'hw9-date'}>{stringDate}</span>
+                            <span id={'hw9-date'}>{formattedDate}</span>
                         </>
                     ) : (
                         <>
