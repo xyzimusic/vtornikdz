@@ -12,6 +12,7 @@ import SuperEditableSpan from '../s2-homeworks/hw06/common/c4-SuperEditableSpan/
 import SuperButton from '../s2-homeworks/hw04/common/c2-SuperButton/SuperButton';
 import HW7 from '../s2-homeworks/hw07/HW7';
 import HW8 from '../s2-homeworks/hw08/HW8';
+import HW9 from '../s2-homeworks/hw09/HW9';
 
 function App() {
     const [value, setValue] = useState<string>('')
@@ -35,20 +36,11 @@ function App() {
 
             {/*при выполнении дз 5 и более - закомментировать здесь дз 1-4, так как они есть внутри дз 5*/}
             {/*<HW5/>*/}
-            <HW6/>
-            <HW7/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <HW8/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+            {/*<HW6/>*/}
+            {/*<HW7/>*/}
+            {/*<HW8/>*/}
+            <HW9/>
+
         </div>
     )
 }
