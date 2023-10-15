@@ -10,16 +10,21 @@ function Clock() {
     const [show, setShow] = useState<boolean>(false)
 
     const start = () => {
+        if (timerId) {
+            clearInterval(timerId); // Останавливаем предыдущий таймер
+        }
         const id = setInterval(() => {
-            setDate(new Date()) // Обновляем дату каждую секунду
-        }, 1000)
+            setDate(new Date()); // Обновляем дату каждую секунду
+        }, 1000);
         setTimerId(id as unknown as SetStateAction<number | undefined>)
     }
 
     const stop = () => {
         // пишут студенты // поставить часы на паузу, обнулить ид таймера (timerId <- undefined)
-        clearInterval(timerId) // Останавливаем таймер
-        setTimerId(undefined) // Обнуляем идентификатор таймера
+        if (timerId) {
+            clearInterval(timerId); // Останавливаем текущий таймер
+            setTimerId(undefined); // Обнуляем идентификатор таймера
+        }
     }
 
     const onMouseEnter = () => { // пишут студенты // показать дату если наведена мышка
