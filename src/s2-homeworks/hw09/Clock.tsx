@@ -29,7 +29,8 @@ function Clock() {
         setShow(false) // Скрываем дату при уходе мыши
     }
 
-    const stringTime =  date.toLocaleTimeString(undefined, { hour12: false });; // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
+    const stringTime =  date.toLocaleTimeString('ru-RU', { hour12: false });; // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
+    const formattedTime = stringTime.substring(0, stringTime.length - 3);
     const stringDate = date.toLocaleDateString();// день.месяц.год (01.02.2022) // пишут студенты, варианты 01.02.0123/01.02.-123/01.02.12345 не рассматриваем
 
     // день недели на английском, месяц на английском (https://learn.javascript.ru/intl#intl-datetimeformat)
@@ -48,7 +49,7 @@ function Clock() {
             >
                 <span id={'hw9-day'}>{stringDay}</span>,{' '}
                 <span id={'hw9-time'}>
-                    <strong>{stringTime}</strong>
+                    <strong>{formattedTime}</strong>
                 </span>
             </div>
 
