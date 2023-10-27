@@ -45,14 +45,12 @@ function Clock() {
     console.log(`stringTime = ${stringTime}`)
     return (
         <div className={s.clock}>
-            <div
+            <div onClick={}
                 id={'hw9-watch'}
                 className={s.watch}
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
             >
-
-
                 <span id={'hw9-day'}>{stringDay}</span>,{' '}
                 <span id={'hw9-time'}>
                     <strong>{stringTime}</strong>
